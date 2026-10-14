@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package format="3">
+
+  <name>kinova_sdk_bridge</name>
+  <version>0.0.1</version>
+
+  <description>
+    ROS2 bridge exposing Kinova SDK functionality.
+  </description>
+
+  <maintainer email="alexander@todo.com">
+    Alexander Ceron
+  </maintainer>
+
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- ROS -->
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+
+  <!-- Services -->
+  <depend>rosidl_default_generators</depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <!-- Kinova SDK -->
+  <depend>kortex_api</depend>
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>

@@ -1,0 +1,13 @@
+cd ~/kinova_ws/src
+
+git clone -b jazzy https://github.com/Kinovarobotics/ros2_kortex.git
+
+cd ~/kinova_ws
+
+rosdep install --from-paths src --ignore-src -r -y
+
+Si aparece error por paquetes duplicados, 
+~/kinova_ws/ros2_kortex
+~/kinova_ws/src/ros2_kortex
+
+eliminar este ~/kinova_ws/ros2_kortex
